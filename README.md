@@ -4,4 +4,4 @@
 
 A simple conversion tool to convert .osk taiko maps into .tja taiko charts.
 
-Ignore the fact that Ruby is slow for file conversions, it's the only language I know.
+Ignore the fact that Ruby is slow for file conversions, it's the only language I'm good at.
