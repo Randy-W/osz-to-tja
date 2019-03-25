@@ -5,8 +5,8 @@
 Ignore the fact that Ruby is slow for file conversions, it's the only language I'm good at.
 
 # Future Goals Checklist #
-- **Successful .tja merging (very important)**
-- Create functioning and beautiful GUI
-- Create beautiful installer for release (or make portable? whichever comes first)
-- Filename sniffing for difficulties
-- Proper error messages
+  - **Successful .tja merging (very important)**
+  - Create functioning and beautiful GUI
+  - Create beautiful installer for release (or make portable? whichever comes first)
+  - Filename sniffing for difficulties
+  - Proper error messages
