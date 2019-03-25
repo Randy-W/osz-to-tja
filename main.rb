@@ -1,4 +1,6 @@
-# I will begin development on this soon. Until then, have a blank file!
+# Formulas #
+# BPM -> ms --- 60000/t
+# ms -> BPM --- t*60
 
   Shoes.app {
     background "#F66".."#9BD"
