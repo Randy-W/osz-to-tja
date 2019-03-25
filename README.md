@@ -12,5 +12,5 @@ Ignore the fact that Ruby is slow for file conversions, it's the only language I
 -   Create beautiful installer for release (or make portable? whichever comes first)
 -   Filename sniffing for difficulties
 -   Proper error messages
-
+##
 ![alt text](https://hades.s-ul.eu/bJ7JYNIj "isn't my graph just beautiful")
