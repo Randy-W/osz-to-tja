@@ -1,6 +1,7 @@
 # Formulas #
 # BPM -> ms --- 60000/t
-# ms -> BPM --- t*60
+# ms -> BPM --- t*60000
+require 'Shoes'
 
   Shoes.app {
     background "#F66".."#9BD"
