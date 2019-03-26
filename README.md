@@ -14,4 +14,4 @@ Ignore the fact that Ruby is slow for file conversions, it's the only language I
 -   Filename sniffing for difficulties
 -   Proper error messages
 ##
-![alt text](https://hades.s-ul.eu/bJ7JYNIj "isn't my graph just beautiful")
+![alt text](https://hades.s-ul.eu/jIX0OC7J "isn't my graph just beautiful")
