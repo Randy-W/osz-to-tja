@@ -31,9 +31,9 @@ dialog.directory(
 File.rename("./convert_temp/osz/*.osu$", "*.txt$")
 File.foreach(filename) do |file|
   
-elsif file.grep(/Mode: 1/)
-   puts "test"
-else
-   puts "test"      
+#elsif file.grep(/Mode: 1/)
+#   puts "test"     # replace this with actual code
+#else
+#   puts "test"     # replace this with actual code
 end
 end
