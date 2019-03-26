@@ -5,6 +5,7 @@
 Ignore the fact that Ruby is slow for file conversions, it's the only language I'm good at.
 
 ## Future Goals Checklist
+-   move from Shoes to FXRuby (waiting on stackoverflow answers zzz)
 -   **Successful .tja merging (very important)**
 -   Add proper rests
 -   Add BPM changes
