@@ -5,6 +5,7 @@
 Ignore the fact that Ruby is slow for file conversions, it's the only language I'm good at.
 
 ## Future Goals Checklist
+-   make logo
 -   move from Shoes to FXRuby (waiting on stackoverflow answers zzz)
 -   **Successful .tja merging (very important)**
 -   Add proper rests
@@ -15,4 +16,4 @@ Ignore the fact that Ruby is slow for file conversions, it's the only language I
 -   Proper error messages
 -   **Drumroll/balloon support**
 ##
-![alt text](https://hades.s-ul.eu/4H51AjbE "isn't my graph just beautiful")
+![alt text](https://hades.s-ul.eu/4H51AjbE "")
