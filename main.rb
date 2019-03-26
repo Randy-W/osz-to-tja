@@ -4,6 +4,7 @@
 require 'fox16'
 require 'zip'
 
+# --- BEGIN GUI --- #
   Shoes.app {
     background "#F66".."#9BD"
     title(".osz  to .tja converter!",
@@ -12,25 +13,27 @@ require 'zip'
           font:   "Trebuchet MS",
           stroke: white)
   }
+# --- END GUI --- # 
 
-## When convert button is pressed
-# File.rename("*.osk", "*.zip")   #=> 0
-#     Dir["/path/to/search/**/*.osu"]
-#   }
-#  }
+  #When convert button is pressed
+File.rename("*.osk$", "*.zip$")
 
-def extract_zip(file, destination)
-  FileUtils.mkdir_p(destination)
+dialog.directory(
 
-  Zip::File.open(file) do |zip_file|
-    zip_file.each do |f|
-      fpath = File.join(destination, f.name)
-      zip_file.extract(f, fpath) unless File.exist?(fpath)
-    end
-  end
+    def extract_zip(file, destination) FileUtils.mkdir_p(destination)
+
+    file_path = "./convert_temp/*.zip"
+    destination = "./convert_temp/osz/"
+
+    extract_zip(file_path, destination)
+      
+10. times do
+File.rename("./convert_temp/osz/*.osu$", "*.txt$")
+File.foreach(filename) do |file|
+  
+elsif file.grep(/Mode: 1/)
+   #Code here james smh! you suck at coding
+else
+   #put message box here using FXDialogBox      
 end
-
-file_path   = "/convert_temp/*.zip"
-destination = "/extract/destination/"
-
-extract_zip(file_path, destination)
+end
