@@ -32,8 +32,8 @@ File.rename("./convert_temp/osz/*.osu$", "*.txt$")
 File.foreach(filename) do |file|
   
 elsif file.grep(/Mode: 1/)
-   #Code here james smh! you suck at coding
+   puts "test"
 else
-   #put message box here using FXDialogBox      
+   puts "test"      
 end
 end
