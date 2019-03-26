@@ -1,7 +1,8 @@
 # Formulas #
 # BPM -> ms --- 60000/t
 # ms -> BPM --- t*60000
-require 'Shoes'
+require 'fox16'
+require 'zip'
 
   Shoes.app {
     background "#F66".."#9BD"
@@ -14,10 +15,22 @@ require 'Shoes'
 
 ## When convert button is pressed
 # File.rename("*.osk", "*.zip")   #=> 0
-#  Zip::ZipFile.open(file_path) { |zip_file|
-#     zip_file.each { |f|
-#     f_path=File.join("destination_path", f.name)
-#     FileUtils.mkdir_p(File.dirname(f_path))
-#     zip_file.extract(f, f_path) unless File.exist?(f_path)
+#     Dir["/path/to/search/**/*.osu"]
 #   }
 #  }
+
+def extract_zip(file, destination)
+  FileUtils.mkdir_p(destination)
+
+  Zip::File.open(file) do |zip_file|
+    zip_file.each do |f|
+      fpath = File.join(destination, f.name)
+      zip_file.extract(f, fpath) unless File.exist?(fpath)
+    end
+  end
+end
+
+file_path   = "/convert_temp/*.zip"
+destination = "/extract/destination/"
+
+extract_zip(file_path, destination)
