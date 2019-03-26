@@ -13,6 +13,6 @@ Ignore the fact that Ruby is slow for file conversions, it's the only language I
 -   Create beautiful installer for release (or make portable? whichever comes first)
 -   Filename sniffing for difficulties
 -   Proper error messages
--   **Drumroll support**
+-   **Drumroll/balloon support**
 ##
 ![alt text](https://hades.s-ul.eu/4H51AjbE "isn't my graph just beautiful")
