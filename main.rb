@@ -27,15 +27,16 @@ dialog.directory(
 
     extract_zip(file_path, destination)
       
-10. times {
-File.rename("./convert_temp/osz/*.osu$", "*.txt$")
-File.foreach(filename) do |file|
+until File.exists?( ".osu$" ) == false do
+  File.rename("./convert_temp/osz/*.osu$", "*.txt$")
+  File.foreach(filename) do |file|
   
-file_string = File.read('./convert_temp/osz/*.txt$')
+  file_string = File.read('./convert_temp/osz/*.txt$')
 
-if file_string.include?('Mode: 1')
-  puts 'Yes'
-else
-  puts 'No'
+  if file_string.include?('Mode: 1')
+    puts 'Yes'
+  else
+    puts 'No'
+  end
 end
-}
+
