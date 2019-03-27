@@ -31,9 +31,9 @@ dialog.directory(
 File.rename("./convert_temp/osz/*.osu$", "*.txt$")
 File.foreach(filename) do |file|
   
-file_string = File.read('path/to/file')
+file_string = File.read('./convert_temp/osz/*.txt$')
 
-if file_string.include?('substring')
+if file_string.include?('Mode: 1')
   puts 'Yes'
 else
   puts 'No'
