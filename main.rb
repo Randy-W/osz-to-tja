@@ -5,7 +5,8 @@ require 'fox16'
 require 'zip'
 
 # --- BEGIN GUI --- #
-class AutoLogin < FXMainWindow             # I'm still learning FXRuby, so a better GUI will come out when I fully expand my capabilities.
+class AutoLogin < FXMainWindow
+# I'm still learning FXRuby, so a better GUI will come out when I fully expand my capabilities.
   def initialize(app)
     super(app, "Auto Login Toggler", :width => 400, :height => 200)
     vFrame1 = FXVerticalFrame.new(self, :opts => LAYOUT_FILL)
@@ -20,7 +21,7 @@ class AutoLogin < FXMainWindow             # I'm still learning FXRuby, so a bet
 end
 # --- END GUI --- # 
 
-  #When convert button is pressed
+#When convert button is pressed
 File.rename("*.osk$", "*.zip$")
 
 dialog.directory(
@@ -42,5 +43,7 @@ until File.exists?( ".osu$" ) == false do
     puts 'Yes'
   else
     puts 'No'
-    # i think codacy is out to hunt me or something idk what im doing wrong
+    end
+ end
+ # i think codacy is out to hunt me or something idk what im doing wrong
 
