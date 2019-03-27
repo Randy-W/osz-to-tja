@@ -27,13 +27,15 @@ dialog.directory(
 
     extract_zip(file_path, destination)
       
-10. times do
+10. times {
 File.rename("./convert_temp/osz/*.osu$", "*.txt$")
 File.foreach(filename) do |file|
   
-#elsif file.grep(/Mode: 1/)
-#   puts "test"     # replace this with actual code
-#else
-#   puts "test"     # replace this with actual code
-#end
+file_string = File.read('path/to/file')
+
+if file_string.include?('substring')
+  puts 'Yes'
+else
+  puts 'No'
 end
+}
