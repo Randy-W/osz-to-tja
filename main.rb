@@ -37,6 +37,5 @@ until File.exists?( ".osu$" ) == false do
     puts 'Yes'
   else
     puts 'No'
-  end
 end
 
