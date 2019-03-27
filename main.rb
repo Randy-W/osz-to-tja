@@ -26,7 +26,7 @@ File.rename("*.osz", "*.zip$")
 
 dialog.directory()
 
-  def extract_zip(file, destination) FileUtils.mkdir_p(destination)
+  def extract_zip(file_path, destination) FileUtils.mkdir_p(destination)
 
     file_path = "./convert_temp/*.zip"
     destination = "./convert_temp/osz/"
