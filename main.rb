@@ -43,7 +43,4 @@ until File.exists?( ".osu$" ) == false do
     puts 'Yes'
   else
     puts 'No'
-    end
- end
- # i think codacy is out to hunt me or something idk what im doing wrong
 
