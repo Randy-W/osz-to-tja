@@ -11,7 +11,7 @@ class AutoLogin < FXMainWindow
     super(app, "Auto Login Toggler", :width => 400, :height => 200)
     vFrame1 = FXVerticalFrame.new(self, :opts => LAYOUT_FILL)
     hFrame3 = FXHorizontalFrame.new(vFrame1)
-    generateButton = FXButton.new(hFrame3, "Convert!")
+    FXButton.new(hFrame3, "Open Folder")
     
   end
   def create
@@ -21,7 +21,7 @@ class AutoLogin < FXMainWindow
 end
 # --- END GUI --- # 
 
-#When convert button is pressed
+
 File.rename("*.osz", "*.zip$")
 
 dialog.directory()
@@ -35,8 +35,8 @@ dialog.directory()
 
     until File.exists?( "*.osu" ) == false do
       File.rename("./convert_temp/osz/*.osu", "./convert_temp/osz/*.txt")
-      File.foreach(filename) do |file_string|
-        if file_string.include?('Mode: 1')
+      File.foreach(filename) do |file|
+        if file.include?('Mode: 1')
           puts 'Yes'
         else
           puts 'No'
