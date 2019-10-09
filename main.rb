@@ -4,24 +4,6 @@
 require 'fox16'
 require 'zip'
 
-# --- BEGIN GUI --- #
-class AutoLogin < FXMainWindow
-# I'm still learning FXRuby, so a better GUI will come out when I fully expand my capabilities.
-  def initialize(app)
-    super(app, "Auto Login Toggler", :width => 400, :height => 200)
-    vFrame1 = FXVerticalFrame.new(self, :opts => LAYOUT_FILL)
-    hFrame3 = FXHorizontalFrame.new(vFrame1)
-    FXButton.new(hFrame3, "Open Folder")
-    
-  end
-  def create
-    super
-    show(PLACEMENT_SCREEN)
-  end
-end
-# --- END GUI --- # 
-
-
 File.rename("*.osz", "*.zip$")
 
 dialog.directory()
